@@ -1,0 +1,26 @@
+import { parsePrice } from './productData';
+
+// Fisher-Yates shuffle algorithm
+export function shuffleArray<T>(array: T[]): T[] {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
+// Calculate discount percentage from original and current price
+export function calculateDiscount(originalPrice: string, currentPrice: string): string | undefined {
+  if (!originalPrice || !currentPrice) return undefined;
+  
+  const original = parsePrice(originalPrice);
+  const current = parsePrice(currentPrice);
+  
+  if (original <= current) return undefined;
+  
+  const discountAmount = original - current;
+  const discountPercentage = Math.round((discountAmount / original) * 100);
+  
+  return `${discountPercentage}% OFF`;
+}
