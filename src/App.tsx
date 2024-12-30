@@ -14,7 +14,7 @@ import { Product } from './types';
 function App() {
   const [favorites, setFavorites] = useState<Set<string>>(new Set());
   const [products, setProducts] = useState<Product[]>([]);
-  const MEASUREMENT_ID = 'MEASUREMENT_ID'; // Replace with actual ID
+  const MEASUREMENT_ID = 'G-57LCTKWBJY'; // Replace with actual ID
 
   useEffect(() => {
     const storedFavorites = localStorage.getItem('favorites');
