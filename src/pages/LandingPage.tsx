@@ -41,7 +41,7 @@ export function LandingPage({ favorites, showFavorites, setShowFavorites, onFavo
           <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
             <div className="text-center text-white">
               <h2 className="text-4xl sm:text-5xl mb-4 font-light">Petite Fashion for Every Style</h2>
-              <p className="text-lg sm:text-xl mb-6 sm:mb-8">Shop from 100+ brands ALL in one place</p>
+              <p className="text-lg sm:text-xl mb-6 sm:mb-8">Shop from 30+ brands ALL in one place</p>
               <Link to="/shop" className="inline-block bg-white text-black px-6 sm:px-8 py-2 sm:py-3 rounded-sm hover:bg-gray-100 transition-colors">
                 Shop All Now
               </Link>
