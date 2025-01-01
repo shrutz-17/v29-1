@@ -40,7 +40,8 @@ function App() {
       "/liveunlimitedlondon-2024-12-13.csv",
       "/dorothyperkins.csv",
       "/lovall.csv",
-      "/warehouse.csv"
+      "/warehouse.csv",
+      "/roandzo.csv"
     ])
       .then(setProducts)
       .catch(console.error);
