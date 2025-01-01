@@ -39,7 +39,8 @@ function App() {
       "/ginabacconi-2024-12-13.csv",
       "/liveunlimitedlondon-2024-12-13.csv",
       "/dorothyperkins.csv",
-      "/lovall.csv"
+      "/lovall.csv",
+      "/warehouse.csv"
     ])
       .then(setProducts)
       .catch(console.error);
