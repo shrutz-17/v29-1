@@ -91,6 +91,12 @@ export function Filters({
     "Live Unlimited",
     "Gina Bacconi",
     "Seasalt Cornwall",
+    "Barneys Originals",
+    "Coast",
+    "Joe Browns",
+    "Principles",
+    "Wallis",
+    "Warehouse",
   ].sort((a, b) => a.localeCompare(b)); // Sorts the brands alphabetically
   ;
 
